@@ -1,0 +1,319 @@
+:root {
+    --bg1: hsl(30, 24%, 54%);
+    --bg2: hsl(170, 62%, 44%);
+    --bg3: rgb(127, 156, 8);
+    --body: hwb(43 10% 14%);
+    --white: hsl(0, 74%, 7%);
+    --p: #743b1f;
+}
+
+body {
+    background-color: var(--bg1);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#banner {
+    background: url('jiwon2.webp');
+    height: 100vh;
+    background-size: cover;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #123a41d3, rgba(191, 85, 85, 0.884));
+}
+
+.navbar .nav-link:hover {
+    color: var(--bg3) !important;
+}
+
+.btn {
+    padding: 15px 10px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--bg3);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--bg3);
+    border-color: var(--bg3);
+}
+
+#services {
+    background: var(--bg3);
+}
+
+#about {
+    background: var(--bg1);
+}
+
+#cta {
+    background-image: url('Kim-10.jpeg');
+    position: relative;
+    opacity: 0.90;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 70vh;
+}
+
+.icon-box-img {
+    width: 40%;
+}
+
+.btn-outlinebrand {
+    background-color: transparent;
+    color: var(--bg1);
+    border-color: var(--bg1);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--bg1);
+    color: var(--body);
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.p-3 {
+    background-color: #b1ae52;
+}
+
+.card:hover {
+    background-color: hsl(332, 94%, 51%);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #031303;
+}
+
+.testimonials {
+    background-color: var(--bg3);
+    padding: 30px;
+}
+
+.testimonials img {
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+#reviews a {
+    color: var(--white);
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+#faq {
+    background-color: var(--brand);
+}
+
+.accordion-button {
+    background-color: hwb(326 3% 44%);
+    border: none;
+    border-bottom: 1px solid #7964b9;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(115, 96%, 49%);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-body {
+    border-left: 3px solid var(--bg2);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #9d4a87;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bg1);
+}
+
+/* hover effect for FAQ question */
+.accordion-button:hover {
+    background-color: var(--body);
+    color: var(--bg2);
+}
+
+/* adjust accordion icon */
+.accordion-button::after {
+    font-family: "font awesome 5 free";
+    content: ""; /* plus icon */
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: ""; /* minus icon */
+}
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .faq-item {
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    border-radius: 0 !important;
+  }
+
+  .faq-question {
+    background-color: hsl(34, 77%, 59%);
+    border: none;
+    border-bottom: 1px solid hsl(64, 69%, 60%);
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+  }
+
+  .faq-answer {
+    border-left: 3px solid var(--brand);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: hsl(0, 65%, 61%);
+  }
+
+  .faq-answer p {
+    margin-bottom: 0;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: var(--bg1);
+  }
+
+  /* Hover effect for FAQ questions */
+  .faq-question:hover {
+    background-color: var(--brand); /* Change background color on hover */
+    color: var(--bg1); /* Change text color on hover */
+  }
+
+  /* Adjust accordion icon */
+  .accordion-button::after {
+    font-family: "Font Awesome 5 Free";
+    content: ""; /* Plus icon */
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+  }
+
+  .accordion-button[aria-expanded="true"]::after {
+    content: ""; /* Minus icon */
+    
+  }
+  #footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg1);
+}
+
+#footer ul.list-unstyled li a {
+    color: hsl(191, 89%, 61%);
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: var(--brand) ;
+}
+
+#reviews h2, #services h2 {
+    color: var(--bg1);
+}
+
+.btn-outline-light {
+    border-color: #F2B03B !important;
+    color: #F2B03B;
+}
+
+#footer h5 {
+    color: var(--brand);
+    margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    h1 , h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    #banner p {
+        text-align: center;
+
+    }
+    .btn {
+        font-size: 14px !important;
+        padding: 18px 0px;
+        width: 180px;
+    }
+    section {
+        padding: 60px 10px;
+    }
+
+    #about h3, #about p {
+        text-align: center;
+    }
+
+   .card {
+    margin-bottom: 30px;
+   }
+
+   #cta h2 , #cta2 h2{
+    font-size: 35px;
+   }
+
+   #about:after {
+    display: none;
+   }
+
+   #footer {
+    padding: 50px 20px;
+   }
+
+   #about img {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+   }
+
+    
+}
